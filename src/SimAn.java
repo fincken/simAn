@@ -47,7 +47,7 @@ public class SimAn {
             int x = Node.getX();
             int y = Node.getY();
             cartonNode currentTemp = Node;
-            cartonNode rightNode = neighbour.getNode(x+1,y);
+            cartonNode rightNode = neighbour.getNode(x-1,y);
             currentTemp.setX(x-1);
             currentTemp.setGood();
             rightNode.setX(x);
@@ -57,7 +57,7 @@ public class SimAn {
             neighbours.add(neighbour);
         }
         //Check Up
-        if(Node.getX()!=0 && !currentCarton.getNode(Node.getX(), Node.getY()-1).isEgg()){
+        if(Node.getY()!=0 && !currentCarton.getNode(Node.getX(), Node.getY()-1).isEgg()){
             Carton neighbour = currentCarton;
             int x = Node.getX();
             int y = Node.getY();
@@ -72,7 +72,7 @@ public class SimAn {
             neighbours.add(neighbour);
         }
         //Check Down
-        if(Node.getX()!=currentCarton.getyMax()-1 && !currentCarton.getNode(Node.getX(), Node.getY()+1).isEgg()){
+        if(Node.getY()!=currentCarton.getyMax()-1 && !currentCarton.getNode(Node.getX(), Node.getY()+1).isEgg()){
             Carton neighbour = currentCarton;
             int x = Node.getX();
             int y = Node.getY();
