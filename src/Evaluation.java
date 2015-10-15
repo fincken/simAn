@@ -1,3 +1,4 @@
+import java.awt.image.AreaAveragingScaleFilter;
 import java.util.ArrayList;
 
 /**
@@ -10,8 +11,8 @@ public class Evaluation {
         this.k = k;
     }
 
-    public void legalCheck(ArrayList<ArrayList<cartonNode>> board){
-
+    public void legalCheck(Carton carton){
+        ArrayList<ArrayList<cartonNode>> board = carton.getCarton();
         // Horizontal check
         for (ArrayList<cartonNode> list: board) {
             int eggCount = 0;
@@ -19,7 +20,7 @@ public class Evaluation {
                 if(node.isEgg())
                     eggCount += 1;
                 if(eggCount > k && node.isEgg())
-                    node.setBad(true);
+                    node.setBad();
             }
         }
 
@@ -29,7 +30,7 @@ public class Evaluation {
                 if(board.get(j).get(i).isEgg())
                     eggCount += 1;
                 if(eggCount>k  && board.get(j).get(i).isEgg())
-                    board.get(j).get(i).setBad(true);
+                    board.get(j).get(i).setBad();
             }
         }
 
@@ -41,7 +42,7 @@ public class Evaluation {
                 if(board.get(yCount).get(xCount).isEgg())
                     eggCount += 1;
                 if(eggCount>k  && board.get(yCount).get(xCount).isEgg())
-                    board.get(yCount).get(xCount).setBad(true);
+                    board.get(yCount).get(xCount).setBad();
                 xCount++;
                 yCount--;
             }
@@ -55,7 +56,7 @@ public class Evaluation {
                 if (board.get(yCount).get(xCount).isEgg())
                     eggCount += 1;
                 if (eggCount > k  && board.get(yCount).get(xCount).isEgg())
-                    board.get(yCount).get(xCount).setBad(true);
+                    board.get(yCount).get(xCount).setBad();
                 xCount--;
                 yCount++;
             }
@@ -68,7 +69,7 @@ public class Evaluation {
                 if(board.get(yCount).get(xCount).isEgg())
                     eggCount += 1;
                 if(eggCount>k  && board.get(yCount).get(xCount).isEgg())
-                    board.get(yCount).get(xCount).setBad(true);
+                    board.get(yCount).get(xCount).setBad();
                 xCount++;
                 yCount++;
             }
@@ -82,7 +83,7 @@ public class Evaluation {
                 if (board.get(yCount).get(xCount).isEgg())
                     eggCount += 1;
                 if (eggCount > k && board.get(yCount).get(xCount).isEgg())
-                    board.get(yCount).get(xCount).setBad(true);
+                    board.get(yCount).get(xCount).setBad();
                 xCount--;
                 yCount--;
             }

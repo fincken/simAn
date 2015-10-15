@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /**
  * Created by Fincken on 14.10.2015.
  */
@@ -24,8 +26,14 @@ public class cartonNode {
         return isEgg;
     }
 
-    public void setEgg(boolean isEgg) {
-        this.isEgg = isEgg;
+    public void setEgg() {
+        this.isEgg = true;
+        this.cartonChar = '0';
+
+    }
+    public void removeEgg(){
+        this.isEgg = false;
+        this.cartonChar = '.';
     }
 
     public int getX() {
@@ -48,9 +56,14 @@ public class cartonNode {
         return isBad;
     }
 
-    public void setBad(boolean isBad) {
-        this.isBad = isBad;
+    public void setBad() {
+        this.isBad = true;
         this.cartonChar = '1';
+    }
+
+    public void setGood() {
+        this.isBad = false;
+        this.cartonChar = '0';
     }
 
     public String toString(){

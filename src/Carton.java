@@ -7,11 +7,23 @@ import java.util.Random;
 public class Carton {
     ArrayList<ArrayList<cartonNode>> carton;
     ArrayList<Character> init;
+    private boolean firstRun = true;
+    private int xMax;
+    private int yMax;
 
 
     public Carton(int m, int n){
-        genStart(m,n);
-        createCarton(m,n);
+        this.xMax = n;
+        this.yMax = m;
+        if(this.firstRun) {
+            genStart(m, n);
+            createCarton(m, n);
+        }
+        else{
+            this.carton=new ArrayList<ArrayList<cartonNode>>();
+        }
+
+
     }
 
     public void genStart(int m, int n){
@@ -28,6 +40,7 @@ public class Carton {
             else
                 board.add('.');
         }
+        this.firstRun = false;
         this.init = board;
     }
 
@@ -41,11 +54,32 @@ public class Carton {
         }
     }
 
+    public int getxMax(){
+        return this.xMax;
+    }
+
+    public int getyMax(){
+        return this.yMax;
+    }
+    /*
+    public void createNeighborBoards(){
+        for (int i = 0; i < carton.size(); i++) {
+            for (int j = 0; j < carton.get(i).size(); j++) {
+                if(carton.get(i).get(j).isBad())
+
+            }
+
+        }
+    }
+    */
+    public cartonNode getNode(int x, int y){
+        return carton.get(y).get(x);
+    }
     public String toString(){
         String board = "";
         for (int i = 0; i < this.carton.size(); i++) {
-            for (int j = 0; j < this.carton.size(); j++) {
-                board += carton.get(i).get(j).toString()+" ";
+            for (int j = 0; j < this.carton.get(i).size(); j++) {
+                board += carton.get(i).get(j).toString();
             }
             board += "\n";
         }
@@ -56,13 +90,7 @@ public class Carton {
         return this.carton;
     }
 
-    public static void main(String[] args){
-        Carton c = new Carton(5,5);
-        System.out.println(c.toString());
-        Evaluation ev = new Evaluation(2);
-        ev.legalCheck(c.getCarton());
-        System.out.println(c.toString());
-    }
+
 
 
 
