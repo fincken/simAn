@@ -36,6 +36,7 @@ public class cartonNode {
         this.cartonChar = '.';
     }
 
+
     public int getX() {
         return x;
     }

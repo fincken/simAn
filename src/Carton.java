@@ -10,6 +10,7 @@ public class Carton {
     private boolean firstRun = true;
     private int xMax;
     private int yMax;
+    private double fScore;
 
 
     public Carton(int m, int n){
@@ -84,6 +85,14 @@ public class Carton {
             board += "\n";
         }
         return board;
+    }
+
+    public void setFScore(double fScore){
+        this.fScore = fScore;
+    }
+
+    public double getFScore(){
+        return this.fScore;
     }
 
     public ArrayList<ArrayList<cartonNode>> getCarton(){

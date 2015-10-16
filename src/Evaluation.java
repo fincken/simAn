@@ -90,20 +90,20 @@ public class Evaluation {
 
     }
 
-    public double scoreFunction(Carton carton){
-        int legalEggs = 0;
-        int badEggs = 0;
+    public void scoreFunction(Carton carton){
+        double legalEggs = 0;
+        double badEggs = 0;
 
-        for (int i = 0; i <carton.getyMax()-1; i++) {
-            for (int j = 0; j < carton.getxMax()-1; j++) {
-                if(carton.getNode(i,j).isEgg()){
-                    legalEggs++;
+        for (int i = 0; i <carton.getyMax(); i++) {
+            for (int j = 0; j < carton.getxMax(); j++) {
+                if(!carton.getNode(i,j).isBad()&&carton.getNode(i,j).isEgg()){
+                    legalEggs+= 1;
                 }
                 else if (carton.getNode(i,j).isBad()){
-                    badEggs++;
+                    badEggs+= 1;
                 }
             }
         }
-        return (legalEggs)/(legalEggs+badEggs);
+        carton.setFScore((legalEggs)/(legalEggs+badEggs));
     }
 }
