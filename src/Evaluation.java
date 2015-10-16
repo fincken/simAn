@@ -1,4 +1,3 @@
-import java.awt.image.AreaAveragingScaleFilter;
 import java.util.ArrayList;
 
 /**
@@ -89,5 +88,22 @@ public class Evaluation {
             }
         }
 
+    }
+
+    public double scoreFunction(Carton carton){
+        int legalEggs = 0;
+        int badEggs = 0;
+
+        for (int i = 0; i <carton.getyMax()-1; i++) {
+            for (int j = 0; j < carton.getxMax()-1; j++) {
+                if(carton.getNode(i,j).isEgg()){
+                    legalEggs++;
+                }
+                else if (carton.getNode(i,j).isBad()){
+                    badEggs++;
+                }
+            }
+        }
+        return (legalEggs)/(legalEggs+badEggs);
     }
 }

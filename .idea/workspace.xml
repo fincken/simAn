@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="268da2f7-1594-4653-8224-e167720f972e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/S_Annealing/SimAn.class" afterPath="$PROJECT_DIR$/out/production/S_Annealing/SimAn.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SimAn.java" afterPath="$PROJECT_DIR$/src/SimAn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Evaluation.java" afterPath="$PROJECT_DIR$/src/Evaluation.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="S_Annealing.iws" />
@@ -48,10 +46,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SimAn.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SimAn.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SimAn.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.7977272">
+            <state vertical-scroll-proportion="0.0">
               <caret line="82" column="30" selection-start-line="82" selection-start-column="30" selection-end-line="82" selection-end-column="30" />
               <folding>
                 <element signature="e#144#152#0" expanded="true" />
@@ -61,13 +59,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Evaluation.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Evaluation.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Evaluation.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="85" column="57" selection-start-line="85" selection-start-column="57" selection-end-line="85" selection-end-column="57" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="method#legalCheck#0;class#Evaluation#0" expanded="false" />
+                <element signature="method#scoreFunction#0;class#Evaluation#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -101,9 +100,9 @@
         <option value="$PROJECT_DIR$/../oprog/src/oving3/TicTacToe.java" />
         <option value="$PROJECT_DIR$/../oprog/src/oving3/TicTacToeProgram.java" />
         <option value="$PROJECT_DIR$/src/cartonNode.java" />
-        <option value="$PROJECT_DIR$/src/Evaluation.java" />
         <option value="$PROJECT_DIR$/src/Carton.java" />
         <option value="$PROJECT_DIR$/src/SimAn.java" />
+        <option value="$PROJECT_DIR$/src/Evaluation.java" />
       </list>
     </option>
   </component>
@@ -499,12 +498,12 @@
       <workItem from="1444735536433" duration="2346000" />
       <workItem from="1444819674522" duration="19854000" />
       <workItem from="1444895391837" duration="15219000" />
-      <workItem from="1444910997297" duration="488000" />
+      <workItem from="1444910997297" duration="1363000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37907000" />
+    <option name="totallyTimeSpent" value="38782000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -538,8 +537,8 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3295129" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32976446" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295129" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3295129" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -623,7 +622,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="85" column="57" selection-start-line="85" selection-start-column="57" selection-end-line="85" selection-end-column="57" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#legalCheck#0;class#Evaluation#0" expanded="false" />
+            <element signature="method#scoreFunction#0;class#Evaluation#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -659,7 +659,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="50" column="29" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#legalCheck#0;class#Evaluation#0" expanded="false" />
+            <element signature="method#scoreFunction#0;class#Evaluation#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -686,16 +687,6 @@
             <element signature="e#1927#1928#0" expanded="true" />
             <element signature="e#2300#2301#0" expanded="true" />
             <element signature="e#2334#2335#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Evaluation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="85" column="57" selection-start-line="85" selection-start-column="57" selection-end-line="85" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -728,11 +719,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SimAn.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.7977272">
+        <state vertical-scroll-proportion="0.0">
           <caret line="82" column="30" selection-start-line="82" selection-start-column="30" selection-end-line="82" selection-end-column="30" />
           <folding>
             <element signature="e#144#152#0" expanded="true" />
             <element signature="e#204#212#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Evaluation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#legalCheck#0;class#Evaluation#0" expanded="false" />
+            <element signature="method#scoreFunction#0;class#Evaluation#0" expanded="false" />
           </folding>
         </state>
       </provider>
